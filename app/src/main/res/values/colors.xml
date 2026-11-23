@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="emerald_primary">#FF165B4B</color>
+    <color name="emerald_dark">#FF0D3E33</color>
+    <color name="antique_gold">#FFB68A35</color>
+    <color name="parchment_background">#FFFAF6EE</color>
+    <color name="midnight_background">#FF0C1513</color>
+    <color name="ink_dark">#FF1A221F</color>
+    <color name="cream_light">#FFFFFCF6</color>
+</resources>

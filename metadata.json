@@ -1,0 +1,6 @@
+{
+  "name": "أذكار",
+  "description": "تطبيق أذكار المسلم اليومية والمسبحة الإلكترونية بتصميم هادئ ومريح للعين",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
