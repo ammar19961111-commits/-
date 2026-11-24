@@ -92,8 +92,19 @@ object DhikrNotificationHelper {
             )
             .build()
 
-        runCatching {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU &&
+            ContextCompat.checkSelfPermission(
+                appCtx,
+                Manifest.permission.POST_NOTIFICATIONS
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            return
+        }
+
+        try {
             NotificationManagerCompat.from(appCtx).notify(notificationIdFor(category), notification)
+        } catch (_: SecurityException) {
+            // Permission revoked before posting notification
         }
     }
 
